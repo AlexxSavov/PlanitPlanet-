@@ -1,0 +1,100 @@
+.jumbotron {
+    text-align: center;
+    background-color: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  
+  .description {
+    white-space: pre-wrap;
+  }
+  
+  .time-block {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid rgb(231, 87, 3);
+  }
+  
+  .hour {
+    background-color: #fdfcf7;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color: #b6b6b6;
+    color: rgb(255, 0, 0);
+  }
+  
+  .present {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .future {
+    background-color: #ffffff;
+    color: rgb(2, 2, 2);
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  body {
+    font-family: fantasy
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    text-shadow: #f9e000;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+
+  
+/*** OVERWRITE - MEDIA QUERY FOR TABLETS AND SMALLER  ***/
+/* This will be applied on any screen 768px and bellow */
+@media screen and (max-width: 768px), screen and (max-width: 575px) {
+    .row {
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .hour {
+      padding-right: 17%;
+    }
+  
+    .saveBtn {
+      border: 0;
+      border-radius: 0.25rem;
+      height: 50px;
+    }
+  
+    textarea {
+      min-height: 85px;
+      border: 0;
+    }
+  }
+  
